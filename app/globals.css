@@ -24,6 +24,24 @@
   background: rgba(49, 108, 255, 1);
 }
 
-.countShadow {
+.countShadow:hover {
   box-shadow: 0px 0px 6px 0px #bac4e0;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.unnumber {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  width: auto;
+  margin: 0;
+  padding: 0;
 }
