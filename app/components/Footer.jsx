@@ -32,7 +32,9 @@ function Footer() {
         <div className="flex items-center gap-8">
           <ul className="flex gap-8">
             {footerLink.map((link, _idx) => (
-              <li key={_idx}>{link}</li>
+              <li key={_idx} className=" font-bold text-base">
+                {link}
+              </li>
             ))}
           </ul>
           <button

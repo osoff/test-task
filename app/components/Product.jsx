@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { prodImgs, specifications } from "../constants";
 import Like from "./Like";
+import Counter from "./Counter";
 
 function Product() {
   return (
@@ -79,16 +80,7 @@ function Product() {
                 </p>
               </div>
               <div className="flex items-center h-14 gap-6">
-                <button className="mainbtn h-full text-sm  flex gap-3 items-center justify-center w-full">
-                  <Image
-                    src={"/cardWhite.svg"}
-                    width={24}
-                    height={24}
-                    alt="card"
-                    className=" h-[24px]"
-                  />
-                  В корзину
-                </button>
+                <Counter />
                 <Like />
               </div>
             </div>
